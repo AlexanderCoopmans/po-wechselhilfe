@@ -3,9 +3,9 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm rounded-box">
+  <div class="navbar bg-base-100 shadow-sm rounded-box bg-base-300">
     <div class="navbar-start">
-      <a class="btn btn-ghost text-xl">PO-Wechselhilfe</a>
+      <RouterLink to="/" class="btn btn-ghost text-xl">PO-Wechselhilfe</RouterLink>
     </div>
     <div class="navbar-end">
       <div class="dropdown dropdown-end">
@@ -27,10 +27,10 @@ import { RouterLink } from 'vue-router'
         </div>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/bwi">BWI</RouterLink></li>
+          <li><RouterLink to="/bwl">BWL</RouterLink></li>
         </ul>
       </div>
     </div>
