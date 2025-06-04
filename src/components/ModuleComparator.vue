@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref, computed } from 'vue'
 import ModuleOverview from './ModuleOverview.vue'
 import Popup from './Popup.vue'
 
@@ -130,6 +130,18 @@ function reset() {
     module.chosenModule = undefined
   })
 }
+
+const oldModulesAllCpts = computed(() =>
+  poTransitionData.oldModules.reduce((sum, module) => {
+    return sum + (module.state !== 'btn-neutral' ? module.creditPoints : 0)
+  }, 0),
+)
+
+const newModulesAllCpts = computed(() =>
+  poTransitionData.newModules.reduce((sum, module) => {
+    return sum + (module.state !== '' ? module.creditPoints : 0)
+  }, 0),
+)
 </script>
 
 <template>
@@ -166,13 +178,15 @@ function reset() {
         :moduleOnClick="oldModuleOnClick"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
       >
-        <template #title> Alte Prüfungsordnung </template>
+        <template #title-left> Alte Prüfungsordnung </template>
+        <template #title-right>cp: {{ oldModulesAllCpts }}</template>
       </ModuleOverview>
       <ModuleOverview
         :modules="poTransitionData.newModules"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
       >
-        <template #title> Neue Prüfungsordnung </template>
+        <template #title-left> Neue Prüfungsordnung </template>
+        <template #title-right>cp: {{ newModulesAllCpts }}</template>
       </ModuleOverview>
     </div>
   </div>
