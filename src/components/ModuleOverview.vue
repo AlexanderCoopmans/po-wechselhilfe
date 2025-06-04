@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, reactive, ref } from 'vue'
+import { reactive, ref } from 'vue'
 
 const props = defineProps({
   modules: {
@@ -39,7 +39,7 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
 
 <template>
   <div>
-    <div class="flex justify-between">
+    <div class="flex justify-between mb-1">
       <h2 class="font-bold text-xl"><slot name="title-left"></slot></h2>
       <slot name="title-right"></slot>
     </div>

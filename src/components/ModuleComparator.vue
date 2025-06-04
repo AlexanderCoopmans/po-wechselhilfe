@@ -2,6 +2,7 @@
 import { reactive, ref, computed } from 'vue'
 import ModuleOverview from './ModuleOverview.vue'
 import Popup from './Popup.vue'
+import Legend from './Legend.vue'
 
 const props = defineProps({
   poTransitionData: {
@@ -137,10 +138,30 @@ const oldModulesAllCpts = computed(() =>
   }, 0),
 )
 
+const oldModulesCompleted = computed(() =>
+  poTransitionData.oldModules.reduce((sum, module) => {
+    return sum + (module.state !== 'btn-neutral' ? 1 : 0)
+  }, 0),
+)
+
+const oldModulesUncompleted = computed(
+  () => poTransitionData.oldModules.length - oldModulesCompleted.value,
+)
+
 const newModulesAllCpts = computed(() =>
   poTransitionData.newModules.reduce((sum, module) => {
     return sum + (module.state !== '' ? module.creditPoints : 0)
   }, 0),
+)
+
+const newModulesCompleted = computed(() =>
+  poTransitionData.newModules.reduce((sum, module) => {
+    return sum + (module.state !== '' ? 1 : 0)
+  }, 0),
+)
+
+const newModulesUncompleted = computed(
+  () => poTransitionData.newModules.length - newModulesCompleted.value,
 )
 </script>
 
@@ -168,25 +189,49 @@ const newModulesAllCpts = computed(() =>
   </Popup>
   <div class="flex flex-col items-center w-full h-full gap-3">
     <h1 class="font-bold text-3xl"><slot name="title"></slot></h1>
-    <div class="w-full flex justify-end">
-      <button class="btn btn-warning" @click="reset">Reset</button>
-    </div>
-
-    <div class="grid grid-cols-1 gap-9">
+    <div class="flex flex-col w-full items-center gap-9">
+      <div class="w-full flex justify-between items-center">
+        <Legend />
+        <button class="btn btn-warning" @click="reset">Reset</button>
+      </div>
       <ModuleOverview
         :modules="poTransitionData.oldModules"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
         @moduleClick="oldModuleOnClick"
       >
         <template #title-left> Alte Prüfungsordnung </template>
-        <template #title-right>cp: {{ oldModulesAllCpts }}</template>
+        <template #title-right>
+          <div class="flex gap-3">
+            <span
+              >Bestanden: <b>{{ oldModulesCompleted }}</b></span
+            >
+            <span
+              >Offen: <b>{{ oldModulesUncompleted }}</b></span
+            >
+            <span
+              >cp: <b>{{ oldModulesAllCpts }}</b></span
+            >
+          </div>
+        </template>
       </ModuleOverview>
       <ModuleOverview
         :modules="poTransitionData.newModules"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
       >
         <template #title-left> Neue Prüfungsordnung </template>
-        <template #title-right>cp: {{ newModulesAllCpts }}</template>
+        <template #title-right>
+          <div class="flex gap-3">
+            <span
+              >Angerechnet: <b>{{ newModulesCompleted }}</b></span
+            >
+            <span
+              >Offen: <b>{{ newModulesUncompleted }}</b></span
+            >
+            <span
+              >cp: <b>{{ newModulesAllCpts }}</b></span
+            >
+          </div>
+        </template>
       </ModuleOverview>
     </div>
   </div>
