@@ -15,15 +15,15 @@ const poTransitionData = reactive(props.poTransitionData)
 
 poTransitionData.oldModules = poTransitionData.oldModules.map((module) => {
   return {
-    ...module,
     state: 'btn-neutral',
+    ...module,
   }
 })
 
 poTransitionData.newModules = poTransitionData.newModules.map((module) => {
   return {
-    ...module,
     state: '',
+    ...module,
   }
 })
 

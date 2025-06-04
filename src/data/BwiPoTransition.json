@@ -585,12 +585,14 @@
       "name": "Finanzierung und Investition",
       "creditPoints": 5,
       "type": "Pflichtmodul",
+      "info": "Für dieses Modul gibt es keine Entsprechung in der alten Prüfungsordnung.",
       "semester": 2
     },
     {
       "name": "Digitalisierung und Anwendungssysteme",
       "creditPoints": 5,
       "type": "Pflichtmodul",
+      "info": "Für dieses Modul gibt es keine Entsprechung in der alten Prüfungsordnung.",
       "semester": 2
     },
     {
