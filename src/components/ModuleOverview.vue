@@ -7,12 +7,6 @@ const props = defineProps({
     required: true,
   },
 
-  moduleOnClick: {
-    type: Function,
-    required: false,
-    default: () => {},
-  },
-
   baseCreditPoints: {
     type: Number,
     required: false,
@@ -20,8 +14,13 @@ const props = defineProps({
   },
 })
 
+const emit = defineEmits(['moduleClick'])
+
+function moduleOnClick(module) {
+  emit('moduleClick', module)
+}
+
 const modules = reactive(props.modules)
-const moduleOnClick = props.moduleOnClick || (() => {})
 const baseCreditPoints = ref(props.baseCreditPoints)
 
 const numberOfSemesters = modules.reduce((max, module) => {

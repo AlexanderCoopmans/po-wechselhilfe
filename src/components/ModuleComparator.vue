@@ -175,8 +175,8 @@ const newModulesAllCpts = computed(() =>
     <div class="grid grid-cols-1 gap-9">
       <ModuleOverview
         :modules="poTransitionData.oldModules"
-        :moduleOnClick="oldModuleOnClick"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
+        @moduleClick="oldModuleOnClick"
       >
         <template #title-left> Alte Prüfungsordnung </template>
         <template #title-right>cp: {{ oldModulesAllCpts }}</template>
