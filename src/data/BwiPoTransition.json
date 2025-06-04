@@ -126,7 +126,8 @@
       "semester": 2,
       "transition": {
         "type": "keine Entsprechung"
-      }
+      },
+      "info": "Dieses Modul wird als Testat für Business English anerkannt."
     },
     {
       "name": "Algorithmen und Datenstrukturen",
@@ -187,7 +188,7 @@
       "semester": 3,
       "transition": {
         "type": "Anerkennung",
-        "newModule": "Business Englisch"
+        "newModule": "Business English"
       }
     },
     {
@@ -593,7 +594,7 @@
       "semester": 2
     },
     {
-      "name": "Business Englisch",
+      "name": "Business English",
       "creditPoints": 5,
       "type": "Pflichtmodul",
       "semester": 2

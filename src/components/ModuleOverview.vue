@@ -35,6 +35,10 @@ for (let i = 1; i <= numberOfSemesters; i++) {
 const maxModulesPerSemester = semesters.reduce((max, semester) => {
   return Math.max(max, semester.length)
 }, 0)
+
+function alert(messsage) {
+  window.alert(messsage)
+}
 </script>
 
 <template>
@@ -67,10 +71,62 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
             <div
               for=""
               lang="de"
-              class="btn h-full hyphens-auto flex flex-col items-center text-xs md:text-sm"
+              class="relative btn p-1 h-full hyphens-auto flex flex-col items-center text-xs md:text-sm"
               :class="module.state"
               @click="moduleOnClick(module)"
             >
+              <div class="absolute bottom-1 right-1 flex">
+                <svg
+                  v-if="module.info"
+                  class="size-5 cursor-help"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  @click.stop="alert(module.info)"
+                >
+                  <g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="square"
+                      stroke-miterlimit="10"
+                      stroke-width="2"
+                    ></circle>
+                    <path
+                      d="m12,17v-5.5c0-.276-.224-.5-.5-.5h-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="square"
+                      stroke-miterlimit="10"
+                      stroke-width="2"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="7.25"
+                      r="1.25"
+                      fill="currentColor"
+                      stroke-width="2"
+                    ></circle>
+                  </g>
+                </svg>
+                <svg
+                  v-if="module.group"
+                  title="Wahlmodul"
+                  class="size-5 cursor-help pointer-events-auto"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  @click.stop="alert('Wahlmodul')"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"
+                  />
+                </svg>
+              </div>
               <span class="text-center">{{ module.chosenModule || module.name }}</span>
               <p>{{ module.creditPoints }} cp</p>
             </div>
