@@ -52,7 +52,7 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
       >
         <span class="text-2xl">{{ semesterIndex + 1 }}</span>
         <div
-          class="grid gap-3 h-full"
+          class="grid gap-3 h-full w-full"
           :style="{ gridTemplateColumns: `repeat(${maxModulesPerSemester}, 1fr)` }"
         >
           <div
@@ -63,18 +63,7 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
             }"
           >
             <div
-              v-if="module.group === undefined"
-              lang="de"
-              class="btn h-full hyphens-auto flex flex-col items-center"
-              :class="module.state"
-              @click="moduleOnClick(module)"
-            >
-              <span class="text-center">{{ module.name }}</span>
-              <p>{{ module.creditPoints }} cp</p>
-            </div>
-            <div
               for=""
-              v-else
               lang="de"
               class="btn h-full hyphens-auto flex flex-col items-center"
               :class="module.state"
