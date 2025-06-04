@@ -119,6 +119,17 @@ function onChoiceModuleSelected(choiceModule) {
   selectedModule.value = null
   choseModuleDialog.value.close()
 }
+
+function reset() {
+  poTransitionData.oldModules.forEach((module) => {
+    module.state = 'btn-neutral'
+    module.chosenModule = undefined
+  })
+  poTransitionData.newModules.forEach((module) => {
+    module.state = ''
+    module.chosenModule = undefined
+  })
+}
 </script>
 
 <template>
@@ -137,6 +148,10 @@ function onChoiceModuleSelected(choiceModule) {
   </Popup>
   <div class="flex flex-col items-center w-full h-full gap-3">
     <h1 class="font-bold text-3xl"><slot name="title"></slot></h1>
+    <div class="w-full flex justify-end">
+      <button class="btn btn-warning" @click="reset">Reset</button>
+    </div>
+
     <div class="grid grid-cols-1 gap-9">
       <ModuleOverview
         :modules="poTransitionData.oldModules"
