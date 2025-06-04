@@ -34,6 +34,9 @@ function activateNewModule(transition) {
     if (!module) {
       module = poTransitionData.newModules.find((m) => m.group === group && !m.chosenModule)
     }
+    if (!module) {
+      return
+    }
     module.chosenModule = transition.newModule
   } else {
     module = poTransitionData.newModules.find((m) => m.name === transition.newModule)
@@ -51,6 +54,9 @@ function deactivateNewModule(transition) {
     module = poTransitionData.newModules.find((m) => m.chosenModule === transition.newModule)
     if (!module) {
       module = poTransitionData.newModules.find((m) => m.group === group && !m.chosenModule)
+    }
+    if (!module) {
+      return
     }
     module.chosenModule = undefined
   } else {
