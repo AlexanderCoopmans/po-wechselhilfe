@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import ModuleOverview from './ModuleOverview.vue'
+import Popup from './Popup.vue'
 
 const props = defineProps({
   poTransitionData: {
@@ -11,25 +12,137 @@ const props = defineProps({
 
 const poTransitionData = reactive(props.poTransitionData)
 
-function onClick() {}
+poTransitionData.oldModules = poTransitionData.oldModules.map((module) => {
+  return {
+    ...module,
+    state: 'btn-neutral',
+  }
+})
+
+poTransitionData.newModules = poTransitionData.newModules.map((module) => {
+  return {
+    ...module,
+    state: '',
+  }
+})
+
+function activateNewModule(transition) {
+  const group = transition.group
+  let module
+  if (group !== undefined) {
+    module = poTransitionData.newModules.find((m) => m.chosenModule === transition.newModule)
+    if (!module) {
+      module = poTransitionData.newModules.find((m) => m.group === group && !m.chosenModule)
+    }
+    module.chosenModule = transition.newModule
+  } else {
+    module = poTransitionData.newModules.find((m) => m.name === transition.newModule)
+  }
+
+  if (module) {
+    module.state = 'btn-primary'
+  }
+}
+
+function deactivateNewModule(transition) {
+  const group = transition.group
+  let module
+  if (group !== undefined) {
+    module = poTransitionData.newModules.find((m) => m.chosenModule === transition.newModule)
+    if (!module) {
+      module = poTransitionData.newModules.find((m) => m.group === group && !m.chosenModule)
+    }
+    module.chosenModule = undefined
+  } else {
+    module = poTransitionData.newModules.find((m) => m.name === transition.newModule)
+  }
+
+  if (module) {
+    module.state = ''
+  }
+}
+
+function oldModuleOnClick(module) {
+  if (module.group !== undefined) {
+    selectedModule.value = module
+    choseModuleDialog.value.open()
+    return
+  }
+
+  const transition = module.transition
+  if (module.state === 'btn-neutral') {
+    if (transition.type === 'keine Entsprechung') {
+      module.state = 'btn-error'
+      return
+    }
+    module.state = transition.type === 'Übertragung' ? 'btn-primary' : 'btn-secondary'
+    activateNewModule(transition)
+    return
+  }
+
+  module.state = 'btn-neutral'
+  if (transition.type === 'keine Entsprechung') {
+    return
+  }
+  deactivateNewModule(transition)
+}
+
+const choseModuleDialog = ref(null)
+const selectedModule = ref(null)
+function onChoiceModuleSelected(choiceModule) {
+  selectedModule.value.state = 'btn-neutral'
+  if (selectedModule.value.transition) {
+    deactivateNewModule(selectedModule.value.transition)
+    selectedModule.value.chosenModule = undefined
+  }
+  if (choiceModule !== undefined) {
+    const transition = choiceModule.transition
+
+    console.log({ transition })
+
+    const transitionType = {
+      'keine Entsprechung': 'btn-error',
+      Übertragung: 'btn-primary',
+      Anerkennung: 'btn-secondary',
+    }
+
+    selectedModule.value.chosenModule = choiceModule.name
+    selectedModule.value.state = transitionType[transition.type]
+    selectedModule.value.transition = transition
+    activateNewModule(transition)
+  }
+
+  selectedModule.value = null
+  choseModuleDialog.value.close()
+}
 </script>
 
 <template>
+  <Popup ref="choseModuleDialog">
+    <div v-if="selectedModule !== null" class="grid gap-3 grid-cols-1">
+      <button class="btn btn-error" @click="onChoiceModuleSelected()">Auswahl Aufheben</button>
+      <button
+        v-for="choiceModule in poTransitionData.oldGroups[selectedModule.group]"
+        :key="choiceModule"
+        class="btn btn-primary"
+        @click="onChoiceModuleSelected(choiceModule)"
+      >
+        {{ choiceModule.name }}
+      </button>
+    </div>
+  </Popup>
   <div class="flex flex-col items-center w-full h-full gap-3">
     <h1 class="font-bold text-3xl"><slot name="title"></slot></h1>
     <div class="grid grid-cols-1 gap-9">
       <ModuleOverview
         :modules="poTransitionData.oldModules"
-        :groups="poTransitionData.oldGroups"
-        :moduleOnClick="onClick"
+        :moduleOnClick="oldModuleOnClick"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
       >
         <template #title> Alte Prüfungsordnung </template>
       </ModuleOverview>
       <ModuleOverview
         :modules="poTransitionData.newModules"
-        :groups="poTransitionData.newGroups"
-        :moduleOnClick="onClick"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
       >
         <template #title> Neue Prüfungsordnung </template>

@@ -265,14 +265,14 @@
       "creditPoints": 5,
       "type": "Wahlmodul",
       "semester": 5,
-      "group": "WI"
+      "group": "IT"
     },
     {
       "name": "Informationstechnologien Vertiefung",
       "creditPoints": 5,
       "type": "Wahlmodul",
       "semester": 5,
-      "group": "WI"
+      "group": "IT"
     },
     {
       "name": "Wirtschaftswissenschaften Vertiefung",
@@ -310,7 +310,7 @@
       "creditPoints": 5,
       "type": "Wahlmodul",
       "semester": 6,
-      "group": "WI"
+      "group": "IT"
     },
     {
       "name": "Bachelorarbeit",
@@ -748,8 +748,8 @@
     }
   ],
   "newGroups": {
-    "WI": {},
-    "FB08": {}
+    "WI": [],
+    "FB08": []
   },
   "baseCreditPoints": 5
 }
