@@ -46,38 +46,43 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
       :style="{ gridTemplateRows: `repeat(${semesters.length}, 1fr)` }"
     >
       <div
-        v-for="semester in semesters"
+        v-for="(semester, semesterIndex) in semesters"
         :key="semester"
-        class="grid gap-3"
-        :style="{ gridTemplateColumns: `repeat(${maxModulesPerSemester}, 1fr)` }"
+        class="flex items-center gap-3"
       >
+        <span class="text-2xl">{{ semesterIndex + 1 }}</span>
         <div
-          v-for="module in semester"
-          :key="module"
-          :style="{
-            'grid-column': `span ${Math.max(1, parseInt(module.creditPoints / baseCreditPoints))} / span ${Math.max(1, parseInt(module.creditPoints / baseCreditPoints))}`,
-          }"
+          class="grid gap-3 h-full"
+          :style="{ gridTemplateColumns: `repeat(${maxModulesPerSemester}, 1fr)` }"
         >
           <div
-            v-if="module.group === undefined"
-            lang="de"
-            class="btn h-full hyphens-auto flex flex-col items-center"
-            :class="module.state"
-            @click="moduleOnClick(module)"
+            v-for="module in semester"
+            :key="module"
+            :style="{
+              'grid-column': `span ${Math.max(1, parseInt(module.creditPoints / baseCreditPoints))} / span ${Math.max(1, parseInt(module.creditPoints / baseCreditPoints))}`,
+            }"
           >
-            <span class="text-center">{{ module.name }}</span>
-            <p>{{ module.creditPoints }} cp</p>
-          </div>
-          <div
-            for=""
-            v-else
-            lang="de"
-            class="btn h-full hyphens-auto flex flex-col items-center"
-            :class="module.state"
-            @click="moduleOnClick(module)"
-          >
-            <span class="text-center">{{ module.chosenModule || module.name }}</span>
-            <p>{{ module.creditPoints }} cp</p>
+            <div
+              v-if="module.group === undefined"
+              lang="de"
+              class="btn h-full hyphens-auto flex flex-col items-center"
+              :class="module.state"
+              @click="moduleOnClick(module)"
+            >
+              <span class="text-center">{{ module.name }}</span>
+              <p>{{ module.creditPoints }} cp</p>
+            </div>
+            <div
+              for=""
+              v-else
+              lang="de"
+              class="btn h-full hyphens-auto flex flex-col items-center"
+              :class="module.state"
+              @click="moduleOnClick(module)"
+            >
+              <span class="text-center">{{ module.chosenModule || module.name }}</span>
+              <p>{{ module.creditPoints }} cp</p>
+            </div>
           </div>
         </div>
       </div>
