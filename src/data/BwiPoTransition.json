@@ -110,7 +110,7 @@
     },
     {
       "name": "Marketing / Grundlagen der Beschaffung",
-      "creditPoints": 2.5,
+      "creditPoints": 5,
       "type": "Pflichtmodul",
       "semester": 2,
       "transition": {
