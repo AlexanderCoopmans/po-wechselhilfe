@@ -42,7 +42,7 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
   <div>
     <h2 class="font-bold text-xl"><slot name="title"></slot></h2>
     <div
-      class="w-full grid gap-3 text-xs md:text-sm"
+      class="w-full grid gap-3"
       :style="{ gridTemplateRows: `repeat(${semesters.length}, 1fr)` }"
     >
       <div
@@ -65,7 +65,7 @@ const maxModulesPerSemester = semesters.reduce((max, semester) => {
             <div
               for=""
               lang="de"
-              class="btn h-full hyphens-auto flex flex-col items-center"
+              class="btn h-full hyphens-auto flex flex-col items-center text-xs md:text-sm"
               :class="module.state"
               @click="moduleOnClick(module)"
             >
