@@ -136,14 +136,22 @@ function reset() {
   <Popup ref="choseModuleDialog">
     <div v-if="selectedModule !== null" class="grid gap-3 grid-cols-1">
       <button class="btn btn-error" @click="onChoiceModuleSelected()">Auswahl Aufheben</button>
-      <button
+      <div
         v-for="choiceModule in poTransitionData.oldGroups[selectedModule.group]"
         :key="choiceModule"
-        class="btn btn-primary"
-        @click="onChoiceModuleSelected(choiceModule)"
       >
-        {{ choiceModule.name }}
-      </button>
+        <button
+          class="btn btn-primary w-full"
+          :disabled="
+            poTransitionData.oldModules.some((element) => {
+              return element.chosenModule === choiceModule.name
+            })
+          "
+          @click="onChoiceModuleSelected(choiceModule)"
+        >
+          {{ choiceModule.name }}
+        </button>
+      </div>
     </div>
   </Popup>
   <div class="flex flex-col items-center w-full h-full gap-3">
