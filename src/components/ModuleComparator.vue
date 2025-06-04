@@ -104,8 +104,6 @@ function onChoiceModuleSelected(choiceModule) {
   if (choiceModule !== undefined) {
     const transition = choiceModule.transition
 
-    console.log({ transition })
-
     const transitionType = {
       'keine Entsprechung': 'btn-error',
       Übertragung: 'btn-primary',
