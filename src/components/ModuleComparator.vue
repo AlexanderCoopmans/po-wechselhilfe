@@ -44,7 +44,7 @@ function activateNewModule(transition) {
   }
 
   if (module) {
-    module.state = 'btn-primary'
+    module.state = transition.type === 'Übertragung' ? 'btn-primary' : 'btn-secondary'
   }
 }
 
