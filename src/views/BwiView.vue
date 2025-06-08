@@ -4,6 +4,6 @@ import bwiPoTransitionData from '../data/BwiPoTransition.json'
 </script>
 <template>
   <ModuleComparator :poTransitionData="bwiPoTransitionData">
-    <template #title> Bachelor Wirtschaftsinformtik </template>
+    <template #title> Bachelor Wirtschaftsinformatik </template>
   </ModuleComparator>
 </template>
