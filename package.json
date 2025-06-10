@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write src/",
-    "deploy": "npm run build && git push github --delete gh-pages && git add -f dist && git commit -m \"Temporary Build for gh-pages\" && git subtree push --prefix dist github gh-pages && git reset HEAD~1"
+    "deploy": "npm run build && git push github --delete gh-pages && git add -f dist && git commit -m \"Temporary Build for gh-pages\" && git subtree push --prefix dist github gh-pages && git reset HEAD~1",
+    "push-all": "git add . && git commit -m \"Update\" && git push origin main && git push github main"
   },
   "dependencies": {
     "vue": "^3.5.13",
