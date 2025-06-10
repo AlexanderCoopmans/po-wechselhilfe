@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import BwiView from '../views/BwiView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +12,7 @@ const router = createRouter({
     {
       path: '/bwi',
       name: 'BWI',
-      component: BwiView,
+      component: () => import('../views/BwiView.vue'),
     },
     {
       path: '/bwl',

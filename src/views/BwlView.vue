@@ -1,5 +1,9 @@
+<script setup>
+import ModuleComparator from '../components/ModuleComparator.vue'
+import bwlPoTransitionData from '../data/BwlPoTransition.json'
+</script>
 <template>
-  <div class="about">
-    <h1>This is an BWL page</h1>
-  </div>
+  <ModuleComparator :poTransitionData="bwlPoTransitionData">
+    <template #title> Bachelor Betriebswirtschaftslehre </template>
+  </ModuleComparator>
 </template>

@@ -3,6 +3,7 @@ import { reactive, ref, computed } from 'vue'
 import ModuleOverview from './ModuleOverview.vue'
 import Popup from './Popup.vue'
 import Legend from './Legend.vue'
+import Info from './Info.vue'
 
 const props = defineProps({
   poTransitionData: {
@@ -194,6 +195,9 @@ const newModulesUncompleted = computed(
         <Legend />
         <button class="btn btn-warning" @click="reset">Reset</button>
       </div>
+      <div v-if="poTransitionData.infoPos1">
+        <Info :message="poTransitionData.infoPos1.text" :type="poTransitionData.infoPos1.type" />
+      </div>
       <ModuleOverview
         :modules="poTransitionData.oldModules"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
@@ -214,6 +218,9 @@ const newModulesUncompleted = computed(
           </div>
         </template>
       </ModuleOverview>
+      <div v-if="poTransitionData.infoPos2">
+        <Info :message="poTransitionData.infoPos2.text" :type="poTransitionData.infoPos2.type" />
+      </div>
       <ModuleOverview
         :modules="poTransitionData.newModules"
         :baseCreditPoints="poTransitionData.baseCreditPoints"
@@ -233,6 +240,9 @@ const newModulesUncompleted = computed(
           </div>
         </template>
       </ModuleOverview>
+      <div v-if="poTransitionData.infoPos3">
+        <Info :message="poTransitionData.infoPos3.text" :type="poTransitionData.infoPos3.type" />
+      </div>
     </div>
   </div>
 </template>

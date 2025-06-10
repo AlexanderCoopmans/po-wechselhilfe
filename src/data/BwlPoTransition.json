@@ -1,0 +1,1018 @@
+{
+  "oldModules": [
+    {
+      "name": "Organisation",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Einführung BWL"
+      }
+    },
+    {
+      "name": "Buchhaltung",
+      "creditPoints": 2.5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Buchhaltung und Jahresabschluss"
+      }
+    },
+    {
+      "name": "Wirtschaftsmathematik",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Wirtschaftsmathematik"
+      }
+    },
+    {
+      "name": "Bürgerliches Recht",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Wirtschaftsrecht"
+      }
+    },
+    {
+      "name": "Wirtschaftsinformatik Grundlagen",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Einführung Wirtschaftsinformatik"
+      }
+    },
+    {
+      "name": "Produktion",
+      "creditPoints": 2.5,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Beschaffung und Logistik"
+      }
+    },
+    {
+      "name": "Lernmethoden",
+      "creditPoints": 2,
+      "semester": 1,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "keine Entsprechung"
+      }
+    },
+    {
+      "name": "Personal",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Personal und Organisation"
+      }
+    },
+    {
+      "name": "Internes Rechnungswesen",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Internes Rechnungswesen und Controlling"
+      }
+    },
+    {
+      "name": "Wirtschaftsstatistik",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Wirtschaftsstatistik"
+      }
+    },
+    {
+      "name": "Handels- und Arbeitsrecht",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Wirtschaftsrecht Vertiefung"
+      }
+    },
+    {
+      "name": "Wirtschaftsinformatik-Anwendungssysteme",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Digitalisierung und Anwendungssysteme"
+      }
+    },
+    {
+      "name": "Wirtschaftssprache-Grundlagen",
+      "group": "Sprache1",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Marketing / Grundlagen der Beschaffung",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Marketing"
+      }
+    },
+    {
+      "name": "Externes Rechnungswesen",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Unternehmensbesteuerung & Finanzbuchhaltung mit SAP"
+      }
+    },
+    {
+      "name": "Controlling / Investition",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Finanzierung und Investition"
+      }
+    },
+    {
+      "name": "Mikroökonomie",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Einführung VWL"
+      }
+    },
+    {
+      "name": "Wahlpflichtmodul 1",
+      "group": "Wahlpflichtmodul",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Wirtschaftssprache II",
+      "group": "Sprache2",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Wissenschaftliches Arbeiten",
+      "creditPoints": 3,
+      "semester": 3,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Wissenschaftliches Arbeiten / Forschungsmethoden"
+      }
+    },
+    {
+      "name": "Corporate Finance",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "Corporate Finance und Kapitalmärkte"
+      }
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul I",
+      "group": "Schwerpunkt1",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul I",
+      "group": "Schwerpunkt1",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Schwerpunktvertiefung I",
+      "group": "Schwerpunktvertiefung1",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Makroökononmie",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Anerkennung",
+        "newModule": "VWL Vertiefung"
+      }
+    },
+
+    {
+      "name": "International Competence",
+      "group": "InternationalCompetence",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Business Pläne",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Business Pläne"
+      }
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul II",
+      "group": "Schwerpunkt2",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul II",
+      "group": "Schwerpunkt2",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Schwerpunktvertiefung II",
+      "group": "Schwerpunktvertiefung2",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Steuern",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "keine Entsprechung"
+      }
+    },
+    {
+      "name": "Schlüsselqualifikationen",
+      "group": "Schluesselqualifikationen",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul"
+    },
+    {
+      "name": "Praxisphase",
+      "creditPoints": 15,
+      "semester": 6,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Praxisphase"
+      }
+    },
+    {
+      "name": "Bachelorarbeit",
+      "creditPoints": 12,
+      "semester": 6,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Bachelorarbeit"
+      }
+    },
+    {
+      "name": "Kolloquium",
+      "creditPoints": 3,
+      "semester": 6,
+      "type": "Pflichtmodul",
+      "transition": {
+        "type": "Übertragung",
+        "newModule": "Kolloquium"
+      }
+    }
+  ],
+  "oldGroups": {
+    "Sprache1": [
+      {
+        "name": "Englisch I",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Unternehmensplanspiel"
+        }
+      },
+      {
+        "name": "Französisch I",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Spanisch I",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Niederländisch I",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      }
+    ],
+    "Wahlpflichtmodul": [
+      {
+        "name": "Aktuelle Fragen der regionalen Wirtschaft",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Applied Economics / Nachhaltigkeit: Gesamt- und regionalwirtschaftliche Aspekte der Nachhaltigkeit und Wirtschaftspolitik",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Schwerpunkt Banking: Bankbetriebslehre",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Bankbetriebslehre Grundlagen",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Digitale Personalwirtschaft",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Handelsbetriebslehre",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Unternehmensführung / Marketing: Projekt-Werkstatt Marketing",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Projektwerkstatt",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Unternehmensführung / Marketing: Projekt-Werkstatt Marketing",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International Finance",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Finance: Außenhandelsfinanzierung",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Einführung in ERP-Software am Beispiel SAP",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Infromationstechnologie: ERP-Systeme",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Corporate Compliance und Sustainability",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Nachhaltigkeit: Corporate Compliance & Sustainability",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Ecoland – Planspiel Nachhaltigkeit",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Nachhaltigkeit: Planspiel Ecoland",
+          "group": "Schwerpunkt"
+        }
+      }
+    ],
+    "Sprache2": [
+      {
+        "name": "Wirtschaftsenglisch II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Business English"
+        }
+      },
+      {
+        "name": "Französisch II",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Spanisch II",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Niederländisch II",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      }
+    ],
+    "Schwerpunkt1": [
+      {
+        "name": "Beschaffungsmanagement I",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungsmanagement I",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Marketing I",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Marketing: Marketing I",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Controlling I",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Controlling: Controlling I",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Personalwirtschaft I",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt People & Culture: People & Culture",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International Management I",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt International Management: International Management I",
+          "group": "Schwerpunkt"
+        }
+      }
+    ],
+    "Schwerpunkt2": [
+      {
+        "name": "Beschaffungsmanagement II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungsmanagement II",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Schwerpunkt Marketing: Marketing II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Marketing II",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Controlling II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Controlling: Controlling II",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Personalwirtschaft II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt People & Culture: Arbeitsrecht",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International Management II",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt International Management: International Management II",
+          "group": "Schwerpunkt"
+        }
+      }
+    ],
+    "Schwerpunktvertiefung1": [
+      {
+        "name": "Qualitätskonzepte Einkauf",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Käuferverhaltensforschung",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Marketing: Marketing-Planspiel",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International Management Game",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Controlling: Projektwerkstatt Controlling",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Arbeitskräfteeinsatz und-freisetzung",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt People & Culture: Arbeitsrecht",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Recent Trends in International Management and Marketing",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt International Management: Recent Trends in International Management and Marketing",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Behavioral Economics",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Wirtschaftspsychologie / Applied Economics: Behavioral Economics",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International CSR",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "International CSR",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "Versicherungs-Betriebswirtschaftslehre",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Banking: Aktuelle Themen der Bank- und Finanzwirtschaft",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Beschaffungscontrolling",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungscontrolling",
+          "group": "Schwerpunkt"
+        }
+      }
+    ],
+    "Schwerpunktvertiefung2": [
+      {
+        "name": "Non-Profit-Marketing",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Marketing / Unternehmensführung: Projektwerkstatt Marketing",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Berufsausbildung",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Berufsausbildung",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Energie und Klimaschutz-Controlling",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Controlling: Carbon Management & Reporting",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Rating (Standard&Poors)",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt Banking: Bankmanagement und Risikosteuerung",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Projektwerkstatt International Management",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Schwerpunkt International Management: Recent Trends in International Management and Marketing",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "Sales / Sales Management",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      }
+    ],
+    "InternationalCompetence": [
+      {
+        "name": "International Week",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "International Class",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "German-Russian-Workshop",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "European Economic Policy",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "Intercultural Communication Skills",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "Intercultural Communication for Business",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Intercultural Communication for Business",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "Mergers & Acquisitions",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Schwerpunkt Banking: Mergers & Acquisitions",
+          "group": "Schwerpunkt"
+        }
+      },
+      {
+        "name": "International CSR",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International CSR",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "De-Code China",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      },
+      {
+        "name": "International Experience",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "International Workshops",
+          "group": "InternationalCompetence"
+        }
+      }
+    ],
+    "Schluesselqualifikationen": [
+      {
+        "name": "Arbeits- und Organisationspsychologie",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Konfliktmanagement",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Kommunikation und Gesprächsführung",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Kommunikation und Gesprächsführung",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Visualisieren, Präsentieren und Moderieren",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Visualisieren, Präsentieren und Moderieren",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Verhandeln und Entscheiden",
+        "transition": {
+          "type": "Übertragung",
+          "newModule": "Verhandlungsführung",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Teamentwicklung",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Konfliktmanagement",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Entrepreneurship",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Employability",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "International Experience",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Konfliktmanagement",
+          "group": "FutureSoftSkills"
+        }
+      },
+      {
+        "name": "Empirische Analyse",
+        "transition": {
+          "type": "Anerkennung",
+          "newModule": "Konfliktmanagement",
+          "group": "FutureSoftSkills"
+        }
+      }
+    ]
+  },
+  "infoPos2": {
+    "type": "warning",
+    "text": "In der neuen PO müssen zwei Schwerpunkte abgeschlossen werden, die jeweils aus drei Modulen bestehen. Schwerpunktvertiefungen, die nicht zu einem der beiden Schwerpunkte passen, können als Zusatzmodule im Zeugnis stehen."
+  },
+  "newModules": [
+    {
+      "name": "Einführung BWL",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Buchhaltung und Jahresabschluss",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Einführung Wirtschaftsinformatik",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Wirtschaftsrecht",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Wirtschaftsmathematik",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Unternehmensplanspiel",
+      "creditPoints": 5,
+      "semester": 1,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Einführung VWL",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Finanzierung und Investition",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Digitalisierung und Anwendungssysteme",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Business English",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Wirtschaftsrecht Vertiefung",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Unternehmensbesteuerung & Finanzbuchhaltung mit SAP",
+      "creditPoints": 5,
+      "semester": 2,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Internes Rechnungswesen und Controlling",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Wissenschaftliches Arbeiten / Forschungsmethoden",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Marketing",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Personal und Organisation",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Beschaffung und Logistik",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Wirtschaftsstatistik",
+      "creditPoints": 5,
+      "semester": 3,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Grundlagen der Wirtschafts- und Unternehmensethik",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "VWL Vertiefung",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Future and Soft Skills",
+      "creditPoints": 5,
+      "semester": 4,
+      "type": "Wahlmodul",
+      "group": "FutureSoftSkills"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Schwerpunkt Wahlmodul",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul",
+      "group": "Schwerpunkt"
+    },
+    {
+      "name": "Corporate Finance und Kapitalmärkte",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Business Pläne",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "International Competence",
+      "creditPoints": 5,
+      "semester": 5,
+      "type": "Wahlmodul",
+      "group": "InternationalCompetence"
+    },
+    {
+      "name": "Praxisphase",
+      "creditPoints": 15,
+      "semester": 6,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Bachelorarbeit",
+      "creditPoints": 12,
+      "semester": 6,
+      "type": "Pflichtmodul"
+    },
+    {
+      "name": "Kolloquium",
+      "creditPoints": 3,
+      "semester": 6,
+      "type": "Pflichtmodul"
+    }
+  ],
+  "newGroups": {
+    "FutureSoftSkills": [],
+    "InternationalCompetence": [],
+    "Schwerpunkt": []
+  },
+  "baseCreditPoints": 5
+}
