@@ -1,4 +1,15 @@
 <script setup>
+/**
+ * Navbar.vue - Navigation Bar Component
+ *
+ * This Vue component renders a responsive navigation bar with a title and a dropdown menu.
+ * The dropdown provides navigation links to different routes using vue-router.
+ *
+ * @component
+ *
+ * @example
+ * <Navbar />
+ */
 import { RouterLink } from 'vue-router'
 </script>
 

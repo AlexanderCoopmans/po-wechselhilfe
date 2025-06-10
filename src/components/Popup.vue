@@ -1,14 +1,46 @@
 <script setup>
+/**
+ * Popup.vue - Modal Dialog Component
+ *
+ * This Vue component provides a modal dialog using the native <dialog> element.
+ * It exposes `open` and `close` methods for programmatic control and emits a `close` event
+ * when the dialog is closed by the user or programmatically.
+ *
+ * @component
+ *
+ *
+ * @example
+ *   <Popup ref="popup" @close="onClose">
+ *     <p>Dialog content goes here.</p>
+ *   </Popup>
+ */
+
 import { onMounted, ref } from 'vue'
 
+/**
+ * Emits the 'close' event when the dialog is closed.
+ * @event close
+ */
 const emit = defineEmits(['close'])
 
+/**
+ * Reference to the native dialog element.
+ * @type {import('vue').Ref<HTMLDialogElement | null>}
+ */
 const dialogElement = ref(null)
 
+/**
+ * Opens the modal dialog.
+ * Can be called from the parent via ref.
+ */
 function open() {
   dialogElement.value?.showModal()
 }
 
+/**
+ * Closes the modal dialog.
+ * Can be called from the parent via ref or by user interaction.
+ */
 function close() {
   dialogElement.value?.close()
 }
@@ -32,6 +64,7 @@ onMounted(() => {
         <button class="btn btn-sm btn-circle" @click="close" aria-label="Close modal">✕</button>
       </div>
 
+      <!-- @slot The Content -->
       <slot></slot>
     </div>
     <form method="dialog" class="modal-backdrop" @click="close">

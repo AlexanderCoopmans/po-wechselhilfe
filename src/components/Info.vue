@@ -1,10 +1,35 @@
 <script setup>
+/**
+ * Info.vue - Alert/Notification Component
+ *
+ * This Vue component displays an alert box with a message and an icon,
+ * supporting four types: 'info', 'success', 'warning', and 'error'.
+ * The alert style and icon change according to the `type` prop.
+ *
+ * @component
+ *
+ * @example
+ * <Info type="success" message="Operation completed successfully!" />
+ */
+
 defineProps({
+  /**
+   * The type of alert to display. Determines the color and icon.
+   * Accepted values: 'info', 'success', 'warning', 'error'.
+   * @type {String}
+   * @default 'info'
+   */
   type: {
     type: String,
     default: 'info',
     required: false,
   },
+
+  /**
+   * The message to display inside the alert box.
+   * @type {String}
+   * @default 'This is an info message.'
+   */
   message: {
     type: String,
     default: 'This is an info message.',

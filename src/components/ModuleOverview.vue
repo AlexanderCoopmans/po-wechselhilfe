@@ -1,12 +1,38 @@
 <script setup>
+/**
+ * ModuleOverview.vue - Module Overview Grid Component
+ *
+ * This Vue component displays an overview of modules grouped by semester in a grid layout.
+ * Each module is shown with its name, credit points, and optional info or group icons.
+ * The grid adapts to the number of semesters and modules per semester.
+ *
+ * @component
+ *
+ * @emits moduleClick
+ *   Emitted when a module is clicked. Payload: the clicked module object.
+ *
+ * @example
+ * <ModuleOverview :modules="modules" :baseCreditPoints="5" @moduleClick="onModuleClick" />
+ */
+
 import { reactive, ref } from 'vue'
 
 const props = defineProps({
+  /**
+   * The list of module objects to display.
+   * @type {Array<Object>}
+   * @required
+   */
   modules: {
     type: Object,
     required: true,
   },
 
+  /**
+   * The base number of credit points for grid calculation.
+   * @type {Number}
+   * @default 5
+   */
   baseCreditPoints: {
     type: Number,
     required: false,
@@ -16,6 +42,10 @@ const props = defineProps({
 
 const emit = defineEmits(['moduleClick'])
 
+/**
+ * Handles click on a module.
+ * @param {Object} module
+ */
 function moduleOnClick(module) {
   emit('moduleClick', module)
 }
@@ -23,19 +53,35 @@ function moduleOnClick(module) {
 const modules = reactive(props.modules)
 const baseCreditPoints = ref(props.baseCreditPoints)
 
+/**
+ * The number of semesters, determined by the highest semester number in modules.
+ * @type {Number}
+ */
 const numberOfSemesters = modules.reduce((max, module) => {
   return Math.max(max, module.semester)
 }, 0)
 
+/**
+ * Array of semesters, each containing an array of modules for that semester.
+ * @type {Array<Array<Object>>}
+ */
 const semesters = reactive([])
 for (let i = 1; i <= numberOfSemesters; i++) {
   semesters.push(modules.filter((module) => module.semester === i))
 }
 
+/**
+ * The maximum number of modules in any semester.
+ * @type {Number}
+ */
 const maxModulesPerSemester = semesters.reduce((max, semester) => {
   return Math.max(max, semester.length)
 }, 0)
 
+/**
+ * Shows an alert with the given message.
+ * @param {String} messsage
+ */
 function alert(messsage) {
   window.alert(messsage)
 }
@@ -44,7 +90,11 @@ function alert(messsage) {
 <template>
   <div>
     <div class="flex justify-between mb-1">
-      <h2 class="font-bold text-xl"><slot name="title-left"></slot></h2>
+      <h2 class="font-bold text-xl">
+        <!-- @slot The left title -->
+        <slot name="title-left"></slot>
+      </h2>
+      <!-- @slot The right title -->
       <slot name="title-right"></slot>
     </div>
     <div
