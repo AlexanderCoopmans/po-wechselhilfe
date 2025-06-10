@@ -10,6 +10,16 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/impressum',
+      name: 'Impressum',
+      component: () => import('../views/ImpressumView.vue'),
+    },
+    {
+      path: '/datenschutzerklaerung',
+      name: 'Datenschutzerklärung',
+      component: () => import('../views/DatenschutzerklaerungView.vue'),
+    },
+    {
       path: '/bwi',
       name: 'BWI',
       component: () => import('../views/BwiView.vue'),
