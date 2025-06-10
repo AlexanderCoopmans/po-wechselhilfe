@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm rounded-box bg-base-300">
+  <div class="navbar shadow-sm rounded-box bg-base-300">
     <div class="navbar-start">
       <RouterLink to="/" class="btn btn-ghost text-xl">PO-Wechselhilfe</RouterLink>
     </div>
