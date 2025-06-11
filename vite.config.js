@@ -17,6 +17,10 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      input: {
+        main: 'index.html',
+        notfound: '404.html',
+      },
       output: {
         sanitizeFileName: (name) => {
           // Sanitizes file names generated during the build process:
