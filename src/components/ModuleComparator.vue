@@ -306,6 +306,7 @@ const newModulesUncompleted = computed(
 
 <template>
   <Popup ref="choseModuleDialog">
+    <template #title>Wahlmodul</template>
     <div v-if="selectedModule !== null" class="grid gap-3 grid-cols-1">
       <button class="btn btn-error" @click="onChoiceModuleSelected()">Auswahl Aufheben</button>
       <div

@@ -60,7 +60,10 @@ onMounted(() => {
 <template>
   <dialog id="my_modal" class="modal" ref="dialogElement">
     <div class="modal-box relative">
-      <div class="flex w-full justify-end mb-3">
+      <div class="flex w-full justify-between mb-3">
+        <h2 class="text-2xl font-semibold">
+          <slot name="title"></slot>
+        </h2>
         <button class="btn btn-sm btn-circle" @click="close" aria-label="Close modal">✕</button>
       </div>
 
