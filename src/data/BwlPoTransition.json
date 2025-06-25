@@ -728,6 +728,24 @@
           "newModule": "International Workshops",
           "group": "InternationalCompetence"
         }
+      },
+      {
+        "name": "Französisch",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Spanisch",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
+      },
+      {
+        "name": "Niederländisch",
+        "transition": {
+          "type": "keine Entsprechung"
+        }
       }
     ],
     "Schluesselqualifikationen": [
