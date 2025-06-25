@@ -351,15 +351,17 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Applied Economics / Nachhaltigkeit: Gesamt- und regionalwirtschaftliche Aspekte der Nachhaltigkeit und Wirtschaftspolitik",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Applied Economics", "Nachhaltigkeit"]
         }
       },
       {
-        "name": "Schwerpunkt Banking: Bankbetriebslehre",
+        "name": "Bankbetriebslehre",
         "transition": {
           "type": "Übertragung",
-          "newModule": "Bankbetriebslehre Grundlagen",
-          "group": "Schwerpunkt"
+          "newModule": "Schwerpunkt Banking: Bankbetriebslehre Grundlagen",
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Banking"]
         }
       },
       {
@@ -373,7 +375,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Unternehmensführung / Marketing: Projekt-Werkstatt Marketing",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Unternehmensführung", "Marketing"]
         }
       },
       {
@@ -381,7 +384,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Unternehmensführung / Marketing: Projekt-Werkstatt Marketing",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Unternehmensführung", "Marketing"]
         }
       },
       {
@@ -389,7 +393,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Finance: Außenhandelsfinanzierung",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Finance"]
         }
       },
       {
@@ -397,7 +402,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Infromationstechnologie: ERP-Systeme",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Infromationstechnologie"]
         }
       },
       {
@@ -405,7 +411,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Nachhaltigkeit: Corporate Compliance & Sustainability",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Nachhaltigkeit"]
         }
       },
       {
@@ -413,7 +420,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Nachhaltigkeit: Planspiel Ecoland",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Nachhaltigkeit"]
         }
       }
     ],
@@ -450,7 +458,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungsmanagement I",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Beschaffungsmanagement"]
         }
       },
       {
@@ -458,7 +467,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Marketing: Marketing I",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Marketing"]
         }
       },
       {
@@ -466,7 +476,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Controlling: Controlling I",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Controlling"]
         }
       },
       {
@@ -474,7 +485,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt People & Culture: People & Culture",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["People & Culture"]
         }
       },
       {
@@ -482,7 +494,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt International Management: International Management I",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["International Management"]
         }
       }
     ],
@@ -492,15 +505,17 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungsmanagement II",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Beschaffungsmanagement"]
         }
       },
       {
-        "name": "Schwerpunkt Marketing: Marketing II",
+        "name": "Marketing II",
         "transition": {
           "type": "Übertragung",
-          "newModule": "Marketing II",
-          "group": "Schwerpunkt"
+          "newModule": "Schwerpunkt Marketing: Marketing II",
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Marketing"]
         }
       },
       {
@@ -508,7 +523,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Controlling: Controlling II",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Controlling"]
         }
       },
       {
@@ -516,7 +532,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt People & Culture: Arbeitsrecht",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["People & Culture"]
         }
       },
       {
@@ -524,7 +541,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt International Management: International Management II",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["International Management"]
         }
       }
     ],
@@ -540,7 +558,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Marketing: Marketing-Planspiel",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Marketing"]
         }
       },
       {
@@ -548,7 +567,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Controlling: Projektwerkstatt Controlling",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Controlling"]
         }
       },
       {
@@ -556,7 +576,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt People & Culture: Arbeitsrecht",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["People & Culture"]
         }
       },
       {
@@ -564,7 +585,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt International Management: Recent Trends in International Management and Marketing",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["International Management"]
         }
       },
       {
@@ -572,7 +594,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Wirtschaftspsychologie / Applied Economics: Behavioral Economics",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Wirtschaftspsychologie", "Applied Economics"]
         }
       },
       {
@@ -588,7 +611,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Banking: Aktuelle Themen der Bank- und Finanzwirtschaft",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Banking"]
         }
       },
       {
@@ -596,7 +620,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Beschaffungsmanagement: Beschaffungscontrolling",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Beschaffungsmanagement"]
         }
       }
     ],
@@ -606,7 +631,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Marketing / Unternehmensführung: Projektwerkstatt Marketing",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Marketing", "Unternehmensführung"]
         }
       },
       {
@@ -622,7 +648,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Controlling: Carbon Management & Reporting",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Controlling"]
         }
       },
       {
@@ -630,7 +657,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt Banking: Bankmanagement und Risikosteuerung",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Banking"]
         }
       },
       {
@@ -638,7 +666,8 @@
         "transition": {
           "type": "Anerkennung",
           "newModule": "Schwerpunkt International Management: Recent Trends in International Management and Marketing",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["International Management"]
         }
       },
       {
@@ -702,7 +731,8 @@
         "transition": {
           "type": "Übertragung",
           "newModule": "Schwerpunkt Banking: Mergers & Acquisitions",
-          "group": "Schwerpunkt"
+          "group": "Schwerpunkt",
+          "schwerpunkte": ["Banking"]
         }
       },
       {
